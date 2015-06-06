@@ -1,0 +1,647 @@
+/* --------- Reset css --------- */
+* {
+  margin : 0;
+  padding : 0;
+  outline: 0;
+}
+
+/* --------- Layout --------- */
+body {	
+	background : #CCC url("../img/bg.gif") repeat-x;
+	color : #6B6B6B;
+	font : 12px/170% 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;		
+}
+#xo-canvas {
+	position : relative;
+	width : 952px;
+	margin : 40px auto 30px auto;
+	background : #FFF url("../img/wrap.gif") repeat-y center top;
+}
+#xo-canvas-content {
+  padding : 0 20px 0 0;
+}
+#xo-page {padding-top : 5px;}
+
+/* --------- Hypertext links --------- */
+a, a:visited {	
+	background : inherit;
+	color : #79A325;
+	text-decoration : none;
+}
+a:hover {	
+	background : inherit;
+	color : #73471B;
+	text-decoration : underline;
+}
+
+/* --------- Titles --------- */
+h1, h2, h3 {
+	padding : 10px;		
+	color : #444;
+	font-family : "Trebuchet MS", "Helvetica Neue", Arial, Sans-serif;
+	font-weight : Bold;
+}
+h1 {font-size: 2.9em;}
+h2 {
+  color : #88AC0B;
+	font-size : 2.5em;	
+}
+h3 {
+  padding : 0 10px 4px 10px;	
+	font-size : 1.6em;
+	font-weight : normal;		
+}
+
+/* ---------  Paragraph ---------  */
+p {padding: 12px 10px;}
+
+/* --------- Images --------- */
+img {
+  position : relative;
+  border : 0;  
+}
+img.border {
+  background : #FAFAFA;
+  padding : 8px;
+  border : 1px solid #E4E4E4;	
+}
+
+/* --------- Lists --------- */
+#xo-canvas-content ul, #xo-canvas-content ol {
+	margin : 10px 20px;
+	padding : 0 20px;	
+}
+#xo-canvas-content ul {list-style : none;}
+#xo-canvas-content li {}
+dl {
+  margin : 0;
+  padding : 10px;
+}
+dt {
+  color : #79A62E;
+  font-weight : bold;
+}
+dd {padding-left : 25px;}
+
+/* --------- Forms --------- */
+form {}
+fieldset {
+	margin : 0 0 1em 0;
+	padding : 1em;
+	border : 1px solid #ddd;
+}
+legend {
+  padding : 0 3px 0 3px;
+  color : #444;
+	font-size : .9em;
+	font-weight : bold;
+}
+label {
+  color : #A7743B;
+	font-weight : bold;	
+}
+input, select, textarea {
+	margin : 5px 0;
+	background-color : #F2F0F0;
+	padding : 2px;
+	color : #6A6969;
+	border-width : 1px;
+	border-style : solid;
+  border-color : #d4d4d4 #ebebeb #ebebeb #d4d4d4; 
+}
+input {margin-right : 3px;}
+input.text { 
+  background : #F2F0F0 url("../img/qsearch.gif") repeat-x left;
+  border : 1px solid #ECE5DD;
+}
+
+/* --------- Others --------- */
+acronym, abbr, dfn {  
+  border-bottom: 1px dotted #895F30;
+  cursor: help;
+}
+q, cite, em, dfn, strong {font-style : italic;}
+strong, dfn {font-weight : bold;}
+del {text-decoration : line-through;}
+address {
+  font-style : normal;
+  letter-spacing : .1em;
+}
+hr {display : none;}
+
+/* ---------  Show class --------- */
+.clear {
+  clear : both;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.clearleft{
+  clear : left;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.clearright{
+  clear : right;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.block {display : block;}
+.hide {display : none;}
+.spacer {padding : 0 0 3px 0;}
+.floatleft {
+	float : left;
+	margin-top : 1em;
+	margin-right : 1em;
+	padding-left : 4px;
+	border : 0;
+}
+.floatright {
+	float : right;
+	margin-bottom : 1em;
+	margin-left : 1em;
+	padding : 2px;
+	border : 0;
+}
+.left {text-align : left;}
+.right {text-align : right;}
+.center {text-align : center;}
+
+/* --------- Font class --------- */
+.extrasmall {font-size : .7em;}
+.small {font-size : .9em;}
+.normal {font-size : 1em;}
+.big {font-size : 1.2em;}
+.maxi {font-size : 1.5em;}
+
+.bold {font-weight : bold;}
+.italic {font-style : italic;}
+.underline {text-decoration : underline;}
+
+/* --------- Header --------- */
+#xo-header {
+	position : relative;
+	width : 952px;
+	height : 245px;	
+	margin : 0;	
+	background : #8AB84B url("../img/header.jpg") no-repeat;
+  padding : 0;		
+	color : #fff;
+}
+/* --- Logo --- */
+#xo-header h1#logo-text a {
+	position : absolute;
+	top : 75px;
+  left : 55px;	
+	margin : 0;
+  padding : 0;
+  color : #332616;
+  text-decoration : none;
+  letter-spacing : -5px;	
+	font : bold 66px "Trebuchet MS", "Helvetica Neue", Arial, Sans-serif;		
+}
+/* --- Slogan --- */
+#xo-header p#slogan {
+	position : absolute;
+	top : 148px;
+  left : 150px;
+	margin : 0;
+  padding : 0;
+  color : #322815;
+	letter-spacing : -0.5px;
+	font : bold 15px "Trebuchet MS", "Helvetica Neue", Arial, Sans-serif;		
+}
+/* --- Slogan --- */
+#xo-header #banner {
+  position : relative;
+  float : right;
+  top : 80px;
+  right : 70px;  
+}
+/* --- Top menu --- */
+#top-menu {
+ 	position : absolute;
+ 	top : 0;
+  right : 70px;
+	margin : 0;
+	background : #74A838 url("../img/top-menu.gif") repeat-x;
+	padding : 30px 15px 8px 15px;	
+	color : #fff;	
+	font-family : "Trebuchet MS", Arial, Sans-serif;	
+}
+#top-menu p { 	
+	margin : 0;
+  padding : 0;	
+}
+#top-menu a {
+	color : #fff;
+ 	font-weight : bold;
+}
+
+/* --------- Navigation menu --------- */
+#xo-globalnav {
+	clear : both;
+  width : 952px;
+	height : 50px;	
+  margin : 0;
+	background : #988060 url("../img/nav.gif") no-repeat;	
+  padding : 0;	
+}
+#xo-globalnav ul {
+	float : left;	
+  height : 45px;		
+	margin : 5px 0 0 0;	
+	padding : 0 0 0 40px;	
+  list-style : none;				
+}
+#xo-globalnav ul li {
+	float : left;
+	margin : 0;
+  padding : 0 0 0 10px;		
+}
+#xo-globalnav ul li a {
+	float : left;
+	margin : 0;
+	padding : 0 15px 0 5px;
+	color: #fff;
+	text-decoration : none;	
+	font : bold 15px/45px "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;		
+}
+#xo-globalnav ul li a:hover,
+#xo-globalnav ul li a:active {color: #E7FAA9;}
+#xo-globalnav ul li.current {background: transparent url("../img/left-tab.gif") no-repeat;}
+#xo-globalnav ul li.current a {		
+	background: transparent url("../img/right-tab.gif") no-repeat right top;
+	color: #4B3D2C;
+}
+
+/* --------- Breadcrumb --------- */
+#xo-breadcrumb {
+  margin : 0 5px 0 5px;
+  padding : 3px 3px 3px 5px;
+  font-size : .85em;
+}
+
+/* --------- Left columns --------- */
+#xo-canvas-leftcolumn {
+  width : 200px;
+  padding : 10px 10px 10px 30px;
+  border-right : 1px solid #F3F0E8;
+}
+#xo-canvas-leftcolumn h3.xo-blocktitle {
+  margin: 0 0 5px 10px;
+	padding: 5px 0 5px 7px;	   
+  color: #51432F;
+  text-align : center;
+  font: bold 1.4em "Trebuchet MS", "Helvetica Neue", Arial, Sans-serif;
+  font-weight : bold;
+  border-bottom: 1px solid #E4F2C8;
+}
+#xo-canvas-leftcolumn .xo-blockcontent {
+  margin: 10px 0px 5px 7px;
+  padding : 2px;
+  line-height : 1.2em;
+}
+
+/* --------- Right columns --------- */
+#xo-canvas-rightcolumn {
+  width : 200px;
+  padding : 10px 30px 10px 10px;
+  border-left : 1px solid #F3F0E8;
+}
+#xo-canvas-rightcolumn h3.xo-blocktitle {
+  margin: 0 0 5px 10px;
+	padding: 5px 0 5px 7px;	   
+  color: #51432F;
+  text-align : center;
+  font: bold 1.4em "Trebuchet MS", "Helvetica Neue", Arial, Sans-serif;
+  font-weight : bold;
+  border-bottom: 1px solid #E4F2C8;
+}
+#xo-canvas-rightcolumn .xo-blockcontent {
+  margin: 10px 0px 5px 7px;
+  padding : 2px;
+  line-height : 1.2em;
+}
+
+/* --------- Center blocks --------- */
+#xo-page .xo-block {margin : 5px 10px 5px 5px;}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-topcenterblocks h3.xo-blocktitle, #xo-bottomcenterblocks h3.xo-blocktitle {
+  margin: 0 0 5px 10px;
+	padding: 5px 0 5px 7px;	   
+  color: #51432F;
+  font: bold 1.4em "Trebuchet MS", "Helvetica Neue", Arial, Sans-serif;
+  font-weight : bold;
+  border-bottom: 1px solid #E4F2C8;
+}
+#xo-topcenterblocks .xo-blockcontent, #xo-bottomcenterblocks .xo-blockcontent {
+  padding : 5px 8px 8px 8px;
+  margin-bottom : 2px;
+  line-height : 1.4em;
+  text-align : justify;
+}
+#xo-topleftblocks, #xo-bottomleftblocks, #xo-toprightblocks, #xo-bottomrightblocks {width : 49.5%;}
+#xo-topleftblocks h3.xo-blocktitle, #xo-bottomleftblocks h3.xo-blocktitle,
+#xo-toprightblocks h3.xo-blocktitle, #xo-bottomrightblocks h3.xo-blocktitle {
+  margin: 0 0 5px 10px;
+	padding: 5px 0 5px 7px;	   
+  color: #51432F;
+  font: bold 1.4em "Trebuchet MS", "Helvetica Neue", Arial, Sans-serif;
+  font-weight : bold;
+  border-bottom: 1px solid #E4F2C8;
+}
+#xo-topleftblocks .xo-blockcontent, #xo-toprightblocks .xo-blockcontent,
+#xo-bottomleftblocks .xo-blockcontent, #xo-bottomrightblocks .xo-blockcontent {
+  margin-bottom : 2px;
+  padding : 5px 8px 8px 8px;
+  line-height : 1.4em;
+  text-align : justify;  
+}
+
+/* --------- Content module page --------- */
+#xo-content {
+  padding : 8px;
+  text-align : justify;  
+}
+
+/* --------- Footer --------- */
+#xo-footer {  
+	clear : both;
+	width : 952px;
+	margin : 0;
+	background : #CCC url("../img/footer-bottom.gif") no-repeat left top;	
+	padding : 30px 0 25px 0;		
+  color : #777;
+  text-align : center;	
+	letter-spacing : .2px;
+	font-family : "Trebuchet MS", "Helvetica Neue", Arial, Sans-serif;
+	font-size : 0.95em;	
+}
+#xo-footer p {padding : 10px 0;}
+#xo-footer a:hover { 
+	color : #555; 
+	text-decoration : none;
+	border-bottom : 1px dotted #555;
+}
+#xo-logger-output{font-size : .9em;}
+
+/* --------- Redirect page (system_redirect.html) --------- */
+#xo-canvas-redirect {
+	width : 952px;
+	margin : 40px auto 30px auto;
+}
+#xo-redirect {
+  margin : 10px 80px 10px 80px;
+  background-color : #FCFAF8;
+  padding : 8px;
+  line-height : 1.4em;
+  text-align : center;
+}
+/* --------- Site closed page (system_siteclosed.html) --------- */
+#xo-siteclosed {
+  margin : 10px 200px 10px 200px;
+  background-color : #FCFAF8;
+  padding : 8px;
+  line-height : 1.6em;
+  text-align: center;
+  border : 1px solid F3F0E8;
+}
+#xo-siteclosed strong {
+  display : block;
+  font-style : normal;
+}
+#xo-siteclosed label {
+  font-size : .9em;
+  font-weight : normal;
+}
+#xo-siteclosed input {margin : 2px;}
+
+/* --------- Block main menu --------- */
+#mainmenu {font-size : .9em;}
+#mainmenu a {
+  display : block;
+  margin : 0;
+  background : url("../icons/arrow.gif") no-repeat left;
+  padding : 5px;
+  border-bottom : 1px solid #E8E8E8;
+}
+#mainmenu a:hover {}
+#mainmenu a.menuTop {padding-left : 18px;}
+#mainmenu a.menuMain {padding-left : 18px;}
+#mainmenu a.menuSub {
+  background : none;
+  padding-left : 12px;
+  font-size : .9em;
+  font-style : italic;
+  border : none;
+}
+#mainmenu a.menuSub:hover {}
+
+/* --------- Block user menu --------- */
+#usermenu {font-size : .9em;}
+#usermenu a {
+  display : block;
+  margin : 0;
+  padding : 4px;
+  border-bottom : 1px solid #E8E8E8;
+}
+#usermenu a:hover {}
+#usermenu a.menuTop {}
+#usermenu a.highlight {background-color : #F2F0F0;}
+
+/* --------- Tables and cells --------- */
+table {width : 100%;}
+table td {
+  padding : 0;
+  vertical-align : top;
+  border-width : 0;  
+}
+th {
+  background-color : #ADD163;
+  padding : 2px;
+  color : #fff;  
+  vertical-align : middle;
+	border-width: 1px;
+  border-style: solid;
+  border-color: #C4DE8F #93C138 #93C138 #C4DE8F;	
+}
+.outer {
+  padding : 2px;
+  border : 1px solid #F3F0E8;
+}
+.head {
+  background-color : #FCFAF8;
+  padding : 5px;
+  font-weight : bold;
+}
+.even {
+  background-color : #fff;
+  padding : 5px;
+}
+.odd {
+  background-color : #fff;
+  padding : 5px;
+}
+.foot {
+  background-color : #FCFAF8;
+  padding : 5px;
+  font-weight : bold;
+}
+tr.even td {
+  background-color : #fff;
+  padding : 5px;
+}
+tr.odd td {
+  background-color : #fff;
+  padding : 5px;
+}
+
+/* --------- Core messages --------- */
+.errorMsg {
+  background-color : #B4D481;
+  padding : 2px;
+  color : #fff;  
+  vertical-align : middle;
+	border-width: 1px;
+  border-style: solid;
+  border-color: #C4DE8F #93C138 #93C138 #C4DE8F;	
+}
+.confirmMsg {
+  background-color : #B4D481;
+  padding : 10px;
+  color : #fff;
+  text-align : center;
+	border-width: 1px;
+  border-style: solid;
+  border-color: #C4DE8F #93C138 #93C138 #C4DE8F;	
+}
+.resultMsg {
+  background-color : #B4D481;
+  padding : 10px;
+  color : #fff;
+  text-align : center;
+	border-width: 1px;
+  border-style: solid;
+  border-color: #C4DE8F #93C138 #93C138 #C4DE8F;	
+}
+
+/* --------- Codes and Quotes --------- */
+.xoopsCode {
+  display: block;
+  overflow : auto;
+  margin : 5px 0;  
+  background : #FAF7F5;
+  padding : 15px;
+  text-align : left;    
+  font : 500 1em/1.5em "Lucida Console", "Courier New", monospace;
+  border : 1px solid #EEE8E1;	
+}
+.xoopsQuote {
+	margin : 15px 10px;
+ 	padding : 5px 7px 5px 50px;
+  background : #FAF7F5 url("../img/quote.gif") no-repeat 15px 15px;
+  color : #80614D;	
+  line-height : 1.6em;
+  font-weight : normal;
+	font-size : 17px;	
+	font-style : italic;
+	font-family : Georgia, "Times New Roman", Times, serif;		
+	border : 1px solid #EEE8E1;	
+}
+
+/* --------- Articles --------- */
+.item {margin-bottom : 10px;}
+.itemHead {
+  margin: 0 0 5px 10px;
+	padding: 5px 0 5px 7px;	   
+  color: #51432F;
+  font: bold 1.4em "Trebuchet MS", "Helvetica Neue", Arial, Sans-serif;
+  font-weight : bold;
+  border-bottom: 1px solid #E4F2C8;
+}
+.itemInfo { 
+  background-color : #fff;
+  padding : 3px;
+  text-align : right; 
+}
+.itemTitle a {
+  background-color : transparent;
+  color : #51432F;
+  font-size : 1.1em;
+  font-weight : bold;
+}
+.itemPoster {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemPostDate {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemStats {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemBody {padding-left : 3px;}
+.itemText {
+  margin-top : 5px;
+  margin-bottom : 5px;
+  padding : 0 5px 0 5px;
+  line-height : 1.5em;
+}
+.itemFoot {  
+  background-color : #FAF7F5;
+  padding : 5px;
+  text-align : center;
+  border : 1px solid #EEE8E1; 
+}
+.itemAdminLink {font-size : 1em;}
+.itemPermaLink {font-size : 1em;}
+
+/* --------- Forums and Comments --------- */
+.comTitle {
+  margin-bottom : 2px;
+  font-weight : bold;  
+}
+.comText {padding : 2px;}
+.comUserStat {
+  margin : 2px 4px 2px 4px; 
+  background-color : #fff;
+  padding : 2px;
+  font-size : .8em;
+  font-weight : bold;
+  border : 1px solid #E8E8E8;   
+}
+.comUserStatCaption {font-weight : normal;}
+.comUserStatus {
+  margin-left : 2px;
+  margin-top : 10px;
+  color : #73471B;
+  font-weight : bold;
+  font-size : .8em;
+}
+.comUserRank {margin : 2px;}
+.comUserRankText {
+  font-size : .8em;
+  font-weight : bold;
+}
+.comUserRankImg {border : 0;}
+.comUserName {}
+.comUserImg {margin : 2px;}
+.comDate {
+  font-weight : normal;
+  font-style : italic;
+  font-size : .9em;
+}  
+.comDateCaption {
+  font-weight : bold;
+  font-style : normal;
+  font-size : .8em;
+}
+.signature {
+  font-size : .8em;
+  font-style : italic;
+}
